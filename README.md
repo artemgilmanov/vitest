@@ -42,3 +42,10 @@
   - Enforce best practices
 -  https://github.com/testing-library/eslint-plugin-testing-library
 -  https://github.com/testing-library/eslint-plugin-jest-dom
+
+# Vitest ESLint Plugin
+
+- Enforces best practices
+- Makes sure test "experiments" don't make it into CI
+- Prevents ESLint from flagging Vitest globals like 'test' and 'dercribe' 
+-  [[https://github.com/veritem/eslint-plugin-vitest](https://github.com/vitest-dev/eslint-plugin-vitest)](https://github.com/vitest-dev/eslint-plugin-vitest)
