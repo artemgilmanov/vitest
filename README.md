@@ -29,8 +29,8 @@
     ```
 - Linters address format and style
   - example; preferred assertion method 
-  javascript
-  ```
-    expect (checkbox).toHaveAttribute(checked);
-    expect (checkbox).toBeChecked();
-  ```
+    javascript
+    ```
+      expect (checkbox).toHaveAttribute(checked);
+      expect (checkbox).toBeChecked();
+    ```
