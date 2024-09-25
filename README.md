@@ -49,3 +49,8 @@
 - Makes sure test "experiments" don't make it into CI
 - Prevents ESLint from flagging Vitest globals like 'test' and 'dercribe' 
 - https://github.com/vitest-dev/eslint-plugin-vitest
+
+# Jest ESLint Plugin
+
+- The same as Vitest
+- https://github.com/vitest-dev/eslint-plugin-jest
