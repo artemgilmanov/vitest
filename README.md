@@ -22,13 +22,15 @@
 
 - Formatters (like Prettier) automatically format code (indents, spacing)
   - example: spaces arounf curly braces:
-    javascript```
+    javascript
+    ```
       import {useEffect} from 'react';
       import { useEffect } from 'react';
     ```
 - Linters address format and style
   - example; preferred assertion method 
-  javascript```
+  javascript
+  ```
     expect (checkbox).toHaveAttribute(checked);
     expect (checkbox).toBeChecked();
   ```
