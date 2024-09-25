@@ -17,3 +17,18 @@
 - Also catches errors in code
   - using variable before defining
   - importing from non-existing file
+
+# Linting vs Formatting
+
+- Formatters (like Prettier) automatically format code (indents, spacing)
+  - example: spaces arounf curly braces:
+    javascript```
+      import {useEffect} from 'react';
+      import { useEffect } from 'react';
+    ```
+- Linters address format and style
+  - example; preferred assertion method 
+  javascript```
+    expect (checkbox).toHaveAttribute(checked);
+    expect (checkbox).toBeChecked();
+  ```
