@@ -34,3 +34,11 @@
       expect (checkbox).toHaveAttribute(checked);
       expect (checkbox).toBeChecked();
     ```
+    
+# Linting vs Formatting
+
+- Plugins extended ESLint
+- Testing Library and jest-dom ESLint plugins
+  - Enforce best practices
+-  https://github.com/testing-library/eslint-plugin-testing-library
+-  https://github.com/testing-library/eslint-plugin-jest-dom
