@@ -4,7 +4,7 @@ import { replaceCamelWithSpaces } from './helpers';
 
 test('button starts with correct label and color', () => {
   /**
-   * Destracting container helps to identify
+   * Destructuring container helps to identify
    * the role of a testing element.
    * logRoles(container) prints all
    * roles in the App.
@@ -15,6 +15,8 @@ test('button starts with correct label and color', () => {
   const buttonElement = screen.getByRole('button', { name: /blue/i });
   // check initial color
   expect(buttonElement).toHaveClass('medium-violet-red');
+  // check initial text
+  expect(buttonElement).toHaveTextContent('Change to Midnight Blue');
 });
 
 test('button has correct label and color after click', () => {

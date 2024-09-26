@@ -1,20 +1,23 @@
 import { useState } from 'react';
 import './App.css';
+import { replaceCamelWithSpaces } from './helpers';
 
 function App() {
-  const [buttonColor, setButtonColor] = useState('medium-violet-red');
-  const newButtonColor =
-    buttonColor === 'medium-violet-red' ? 'midnight-blue' : 'medium-violet-red';
   const [disabled, setDisabled] = useState(false);
+  const [buttonColor, setButtonColor] = useState('medium-violet-red');
+  const newButtonColorClassName =
+    buttonColor === 'medium-violet-red' ? 'midnight-blue' : 'medium-violet-red';
+  const nextColorTitleCase = replaceCamelWithSpaces(newButtonColorClassName);
+  const className = disabled ? 'grey' : buttonColor;
 
   return (
     <div>
       <button
-        className={disabled ? 'grey' : buttonColor}
-        onClick={() => setButtonColor(newButtonColor)}
+        className={className}
+        onClick={() => setButtonColor(newButtonColorClassName)}
         disabled={disabled}
       >
-        Change to {newButtonColor}
+        Change to {nextColorTitleCase}
       </button>
       <br />
       <input
