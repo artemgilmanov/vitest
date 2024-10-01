@@ -1,10 +1,4 @@
-# Starter code for Sundaes on Demand
-
-Created for the Udemy course [React Testing Library with Jest / Vitest](https://www.udemy.com/course/react-testing-library)
-
-## How this project was created
-
-This project was created using this command:
+## Create the project
 
 ```sh
 npm create vite@latest sundae-starter -- --template react
@@ -16,7 +10,6 @@ I also removed a few unnecessary files, and updated
 
 - App.jsx
 - index.css
-- this README file 😄
 
 ## Install React Bootstrap, Vitest, and React Testing Library
 
@@ -31,7 +24,7 @@ npm install bootstrap react-bootstrap
 Add this line to _src/main.jsx_:
 
 ```js
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
 ## Update port to 3000
@@ -77,7 +70,7 @@ To make [jest-dom matchers](https://github.com/testing-library/jest-dom#custom-m
 1. add these contents:
 
 ```js
-import "@testing-library/jest-dom";
+import '@testing-library/jest-dom';
 ```
 
 ## Add Vitest and Testing Library plugins to ESLint
@@ -97,7 +90,7 @@ In _.eslintrc.cjs_:
 At the top, require the Vitest plugin:
 
 ```js
-const vitest = require("eslint-plugin-vitest");
+const vitest = require('eslint-plugin-vitest');
 ```
 
 Then Add this property / value to the top-level `module.exports` object:
