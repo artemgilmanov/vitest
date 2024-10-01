@@ -80,3 +80,13 @@ QueryType
 References
 https://testing-library.com/docs/queries/about/
 
+# SummaryForm
+
+- review testing flow where checkbox controls whether button is disabled
+- mouseover for terms and conditions: userEvent
+  - Requires setup step: user = userEvent.setup();
+  - All methods are promises and must be awaited;
+  - methods user.hover and user.unhover
+- for element starting out not on page
+  - queryByText
+  - expect().not.toBeInTheDocument()
