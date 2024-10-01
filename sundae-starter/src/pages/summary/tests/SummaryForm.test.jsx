@@ -1,5 +1,6 @@
 import { render, fireEvent, screen } from '@testing-library/react';
 import SummaryForm from '../SummaryForm';
+import userEvent from '@testing-library/user-event';
 
 describe('summary form tests', () => {
   test('checkbox is uncheched by default', () => {
@@ -20,7 +21,9 @@ describe('summary form tests', () => {
     expect(confirmButton).toBeDisabled();
   });
 
-  test('checkbox enables button on the first click and disables on the second', () => {
+  test('checkbox enables button on the first click and disables on the second', async () => {
+    const user = userEvent.setup();
+
     render(<SummaryForm />);
 
     const checkbox = screen.getByRole('checkbox', {
@@ -31,10 +34,10 @@ describe('summary form tests', () => {
       name: /confirm order/i,
     });
 
-    fireEvent.click(checkbox);
+    await user.click(checkbox);
     expect(confirmButton).toBeEnabled();
 
-    fireEvent.click(checkbox);
+    await user.click(checkbox);
     expect(confirmButton).toBeDisabled();
   });
 });
