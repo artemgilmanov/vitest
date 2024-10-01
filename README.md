@@ -73,9 +73,9 @@ QueryType
 - AltText (images)
 - Text (display elements)
 - Form elements
- - PlaceholderText
- - LabelText
- - DisplayValue
+  - PlaceholderText
+  - LabelText
+  - DisplayValue
 
 References
 https://testing-library.com/docs/queries/about/
