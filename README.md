@@ -99,4 +99,6 @@ https://testing-library.com/docs/queries/about/
   - update setupTests to listen for requests
 - getAllByRole doesnwork with async functions because test file run before registering component's update.
 - await findAllByRole
-  - for asynchronous DOM update of elements. 
+  - for asynchronous DOM update of elements.
+- Debugging
+  - https://mswjs.io/docs/runbook/
