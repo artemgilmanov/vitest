@@ -17,7 +17,6 @@ export default function Options({ optionType }) {
       });
   }, [optionType]);
 
-  // TODO: replace null with TopingOptions when it will be available.
   const ItemComponent = optionType === 'scoops' ? ScoopOption : ToppingOption;
 
   const optionItems = items.map((item) => (
