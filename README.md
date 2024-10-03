@@ -93,4 +93,10 @@ https://testing-library.com/docs/queries/about/
 
 # Mock
 
-When you are waiting for something to appear asynchronously on the page, you must use await findBy.
+- Mock Service Worker mimics response from server
+  - create handler
+  - create server 
+  - update setupTests to listen for requests
+- getAllByRole doesnwork with async functions because test file run before registering component's update.
+- await findAllByRole
+  - for asynchronous DOM update of elements. 
