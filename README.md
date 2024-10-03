@@ -90,3 +90,7 @@ https://testing-library.com/docs/queries/about/
 - for element starting out not on page
   - *queryByText()*
   - *expect().not.toBeInTheDocument()*
+
+# Mock
+
+When you are waiting for something to appear asynchronously on the page, you must use await findBy.
